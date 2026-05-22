@@ -421,75 +421,125 @@ html {
     }
 }
 
+
 /* =========================
    TABLET (<= 1024px)
 ========================= */
+
 @media (max-width: 1024px) {
+
     .header {
-        flex-direction: column;
+        padding: 40px 35px;
+        gap: 40px;
+
         height: auto;
-        padding: 40px 30px;
-        gap: 60px;
+
+        flex-direction: row;
+        align-items: center;
     }
 
+    /* LEFT */
+
     .leftHead {
-        width: 100%;
-        align-items: center;
-        text-align: center;
+        width: 55%;
     }
 
     .texts {
         margin: 40px 0;
-        align-items: center;
+    }
+
+    .live {
+        padding: 0 16px;
+        font-size: 14px;
     }
 
     .glob-clas,
     .glob-clas2 {
-        font-size: 2.8rem;
-        text-align: center;
-        padding: 10px;
+        font-size: 2.7rem;
+        line-height: 1.15;
+    }
+
+    .glob-clas2 {
+        margin-top: -10px;
     }
 
     .leftHead p {
-        width: 100%;
+        width: 95%;
         font-size: 1rem;
+        line-height: 1.7;
     }
+
+    /* BUTTONS */
 
     .bnsCont {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        align-items: center;
+        gap: 12px;
+        margin-top: 25px;
     }
 
-    .btn1-cont,
-    .btn2-cont {
-        width: 160px;
+    .btn1-cont {
+        width: 170px;
+        height: 44px;
+        font-size: 0.95rem;
     }
+
+    .btn2-cont {
+        width: 190px;
+        height: 44px;
+        margin-left: 0;
+        font-size: 0.95rem;
+    }
+
+    /* COUNTS */
 
     .countContainer {
-        justify-content: center;
-        flex-wrap: wrap;
+        margin-top: 35px;
         gap: 30px;
-        margin: 30px 0;
     }
 
+    .conut1,
     .conut2,
     .conut3 {
         margin-left: 0;
     }
 
-    .rightHead {
-        width: 100%;
+    .conut1 b,
+    .conut2 b,
+    .conut3 b {
+        font-size: 1.7rem;
     }
 
-    .topBadge,
+    /* RIGHT */
+
+    .rightHead {
+        width: 45%;
+        min-height: auto;
+        margin-top: 0;
+    }
+
+    .mainCard {
+        max-width: 350px;
+    }
+
+    .cardContent {
+        padding: 22px;
+    }
+
+    .cardContent h1 {
+        font-size: 42px;
+    }
+
+    .topBadge {
+        top: 40px;
+        right: 10px;
+        font-size: 12px;
+    }
+
     .bottomBadge {
-        right: 20px;
-    }
-
-    .rightHead {
-        margin-top: -150px;
+        bottom: -40px;
+        right: 10px;
+        font-size: 12px;
     }
 }
 
