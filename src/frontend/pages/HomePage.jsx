@@ -1,12 +1,12 @@
 // PAGES
-import Header from "../../components/header/Header";
+import Header from "../frontend/components/header/Header";
 
 
 
 function HomePage() {
     return (
         <>
-        <Header />
+            <Header />
         </>
     );
 }

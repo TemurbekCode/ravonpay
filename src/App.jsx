@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import './App.css'
-import Navbar from "./components/navbar/Navbar.jsx";
+import Navbar from "./frontend/components/navbar/Navbar.jsx";
 
 /* Pages */
-import HomePage from "./pages/HomePage.jsx";
+import HomePage from "./frontend/pages/HomePage.jsx";
 
 
 function App() {
   return (
-    <>
+    <> 
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
